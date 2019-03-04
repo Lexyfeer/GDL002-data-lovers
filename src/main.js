@@ -77,7 +77,7 @@ let pokemonInfoTemplate = `
       <h3>Es un pokemón de tipo: {pokemon.type}</h3>
     </div>
     <div class="weaknesses">
-      <h3> Su debilidad son los poquemon de tipo: {pokemon.debilidad}</h3>
+      <h3> Su debilidad son los pokemon de tipo: {pokemon.debilidad}</h3>
     </div>
     </div>
     </div>
@@ -87,7 +87,7 @@ let pokemonInfoTemplate = `
       <h4>{pokemon.next_evolutions}</h4>
     </div>
     <div class="prev_evolution">
-      <h3 class="preevolucion">Prevoluciones<h4>
+      <h3 class="preevolutions">Preevoluciones<h4>
       {pokemon.prev.img}
       <h4>{pokemon.prev_evolutions}</h4>
     </div>
@@ -106,7 +106,7 @@ document.getElementById("select-type").addEventListener("change", event => {
   resetSelect("select-weaknesses");
   displayPokemonCards(dataLovers.getPokemonByTypeFilter(event.target.value));
 let averagesShow = document.getElementById("averages");
-averagesShow.innerHTML ="El porcentaje del tipo seleccionado es:" + averages(dataLovers.getPokemonByTypeFilter(event.target.value)).toFixed(2)+"%";
+averagesShow.innerHTML ="El porcentaje de el tipo seleccionado es:" + averages(dataLovers.getPokemonByTypeFilter(event.target.value)).toFixed(2)+"%";
 document.getElementById("averages").style.display = "block";
 });
 // seleccionar debilidades
@@ -114,7 +114,8 @@ document.getElementById("select-weaknesses").addEventListener("change", event =>
     resetSelect("select-type");
      displayPokemonCards( dataLovers.getPokemonByWeaknessesFilter(event.target.value));
      let averagesShow = document.getElementById("averages");
-    averagesShow.innerHTML ="El porcentaje de el tipo de debilidad seleccionado es "  +   averages(dataLovers.getPokemonByWeaknessesFilter(event.target.value)).toFixed(2)+"%";
+     let percentage = averages(dataLovers.getPokemonByWeaknessesFilter(event.target.value)).toFixed(2);
+    averagesShow.innerHTML = `Un ${percentage}% de los pokemones son debiles contra el tipo ${event.target.value}`;
     document.getElementById("averages").style.display = "block";
   });
 
@@ -143,7 +144,7 @@ function displayPokemonCards(pokemonArray) {
       modal.style.display = "block";
       let selectedPokemon = dataLovers.getPokemonByNum(element.id);
       
-      modalHeader = document.getElementById("info-modal-header").innerText = selectedPokemon.name;
+      document.getElementById("info-modal-header").innerText = selectedPokemon.name;
       modalBody.innerHTML = fillPokemonInfo(selectedPokemon);
     });
 
