@@ -55,36 +55,36 @@ Después una vez que habíamos agregado un recuadro con los botones y selectores
 
 ## Historias de usuario
 
-####El usuario necesita una pagina donde pueda visualizar todos los Pokemon en orden numérico
+#### El usuario necesita una pagina donde pueda visualizar todos los Pokemon en orden numérico
 #### D.O.D 
 -> Mostrar todos los pokemon en hileras de cuatro 
 -> Mostrar los pokemon por orden numérico
 -> Mostrar cada imagen con su nombre correspondiente 
 
-####El usuario necesita que la pagina pueda adaptarse a diferentes pantallas para que pueda visualizarla en cualquiera de sus dispositivos
+#### El usuario necesita que la pagina pueda adaptarse a diferentes pantallas para que pueda visualizarla en cualquiera de sus dispositivos
 #### D.O.D 
 -> Crear estructura HTML basada en GRID
 -> Crear estructura CSS basada en GRID 
 -> Ingresar el contenido HTML en la estructura basada en GRID
 
-####El usuario necesita una pantalla de inicio que contenga la información breve sobre que trata el sitio web
+#### El usuario necesita una pantalla de inicio que contenga la información breve sobre que trata el sitio web
 #### D.O.D 
 -> Crear los botones Home y Pokedex que sirvan para desplazarse dentro de la pagina 
 ->ingresar el texto de bienvenida
 ->crear un banner que muestre tres imágenes referentes a pokemon
 
-####El usuario necesita que al hacer click en la imagen de cualquier pokemon le despliegue  un cuadro de texto para que le muestre la información completa del pokemon seleccionado
+#### El usuario necesita que al hacer click en la imagen de cualquier pokemon le despliegue  un cuadro de texto para que le muestre la información completa del pokemon seleccionado
 #### D.O.D 
 -> Crear un modal para mostrar la informacion del pokemon seleccionado
 -> Mostrar la información del pokemon así como su imagen en el modal creado
 -> Mostrar la información de evoluciones y pre evoluciones de el pokemon seleccionado así como sus imágenes correspondientes .
 
-####El usuario necesita  un boton que le permita ordenar de manera alfabeticamente 
+#### El usuario necesita  un boton que le permita ordenar de manera alfabeticamente 
 #### D.O.D 
 -> rear boton para poder ordenar de manera alfabetica
 -> crear una funcion en JS que realice la acción de ordenar 
 
-####El usuario necesita de dos  menus desplegables que le permitan realizar los siguientes filtros: selección por tipo y selección por debilidad
+#### El usuario necesita de dos  menus desplegables que le permitan realizar los siguientes filtros: selección por tipo y selección por debilidad
 #### D.O.D 
 -> rear menus desplegables en HTML
 -> crear  funciones en JS que realice las acción de filtrar
@@ -95,13 +95,13 @@ los siguientes prototipos fueron realizados en la plataforma de diseño llamada 
 
 fueron diseñados para la pantalla de una computadora de escritorio, y se realizaron tres diseños :  Prototipo para pantalla principal, Prototipo para pantalla de inicio y prototipo para pantalla de información de cada pokemon 
 
-###Prototipo para pantalla principal
+### Prototipo para pantalla principal
 ![enter image description here](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551669887/prototipo_pagina_principal.png)
 
-###Prototipo para pantalla de inicio
+### Prototipo para pantalla de inicio
 ![enter image description here](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551669972/prototipo_inicio.jpg)
 
-###Prototipo para pantalla de información
+### Prototipo para pantalla de información
 ![enter image description here](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551670063/Untitled.jpg) 
 
 
