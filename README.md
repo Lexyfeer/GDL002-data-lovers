@@ -7,25 +7,25 @@ Primero que nada, en equipo decidimos utilizar la **data de Pokémon** porque pe
 Posteriormente nos dimos a la tarea de definir ¿Quiénes serían nuestros principales usuarios?, pensar en ¿Cuál sería el objetivo de nuestros usuarios al usar nuestra página?  y por último con base a las necesidades de los usuarios pensar en ¿Qué datos incluiría nuestra página?
 Quedando de la siguiente forma:
 
-_¿Quiénes son los principales usuarios de producto?_
+#### ¿Quiénes son los principales usuarios de producto?
 
 * Adolescentes, jóvenes y adultos (que estén entre los 15 - 35 años de edad aproximadamente).
 * Personas interesadas en conocer a los Pokémon o quienes ya conocen, aprender un poco más sobre sus tipos, debilidades o conocer si un Pokémon tiene evolución o no y cual es.
 * Personas a las que les gusten los videojuegos y quizá tengan curiosidad por jugar algún tipo de juego relacionado con Pokémon.
 
-_¿Cuáles son los objetivos de estos usuarios en relación con el producto?_
+#### ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 
 * Conocer más sobre habilidades, debilidades, evoluciones y características que definen a los Pokémon.
 
-_¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?_
+#### ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 
-* Breve descripción de la información que podrán encontrar en nuestra        página.
+* Breve descripción de la información que podrán encontrar en nuestra página.
 * Poder ordenar alfabéticamente.
 * Poder ordenar numéricamente.
-* Filtrar por tipo (agua, aire, fuego, tierra)
+* Filtrar por tipo (agua, aire, fuego, tierra).
 * Filtrar por debilidad.
 
-_¿Cuándo utilizan o utilizarían el producto?_
+#### ¿Cuándo utilizan o utilizarían el producto?
 
 * Cuando un usuario del juego Pokémon Go quisiera saber que Pokémon le falta con base al tipo de los mismos.
 * Cuando algún usuario esté interesado en algún tipo de juego que este relacionado a Pokémon y pueda tener acceso rápido a la información de cada Pokémon y esto le permita seleccionar mejor su estrategia de juego.
@@ -37,6 +37,7 @@ Nuestra pagina resuelve los problemas del usuario puesto que le da información 
 ## Feedback
 
 En nuestro caso recibimos algunos feedback acerca de la página y su usabilidad, tales como:
+
 En una primera vista en donde apenas habíamos puesto el background de collage, nos dijeron:
 
 * El fondo de pantalla es muy bonito, pero no se distinguen muy bien las imágenes de todos los Pokémon que quieren mostrar y las letras se pierden.
@@ -55,54 +56,60 @@ Después una vez que habíamos agregado un recuadro con los botones y selectores
 
 ## Historias de usuario
 
-#### El usuario necesita una pagina donde pueda visualizar todos los Pokemon en orden numérico
+#### El usuario necesita una pagina donde pueda visualizar todos los Pokémon en orden numérico
 #### D.O.D 
--> Mostrar todos los pokemon en hileras de cuatro 
--> Mostrar los pokemon por orden numérico
--> Mostrar cada imagen con su nombre correspondiente 
+-> Mostrar todos los pokémon en hileras de cuatro.
+-> Mostrar los pokémon por orden numérico.
+-> Mostrar cada imagen con su nombre correspondiente.
 
 #### El usuario necesita que la pagina pueda adaptarse a diferentes pantallas para que pueda visualizarla en cualquiera de sus dispositivos
 #### D.O.D 
--> Crear estructura HTML basada en GRID
--> Crear estructura CSS basada en GRID 
--> Ingresar el contenido HTML en la estructura basada en GRID
+-> Crear estructura HTML basada en GRID.
+-> Crear estructura CSS basada en GRID.
+-> Ingresar el contenido HTML en la estructura basada en GRID.
 
 #### El usuario necesita una pantalla de inicio que contenga la información breve sobre que trata el sitio web
 #### D.O.D 
--> Crear los botones Home y Pokedex que sirvan para desplazarse dentro de la pagina 
-->ingresar el texto de bienvenida
-->crear un banner que muestre tres imágenes referentes a pokemon
+-> Crear los botones Home y Pokedex que sirvan para desplazarse dentro de la pagina.
+-> Ingresar el texto de bienvenida.
+-> Crear un banner que muestre tres imágenes referentes a pokémon.
 
-#### El usuario necesita que al hacer click en la imagen de cualquier pokemon le despliegue  un cuadro de texto para que le muestre la información completa del pokemon seleccionado
+#### El usuario necesita que al hacer click en la imagen de cualquier pokémon le despliegue  un cuadro de texto para que le muestre la información completa del pokémon seleccionado
 #### D.O.D 
--> Crear un modal para mostrar la informacion del pokemon seleccionado
--> Mostrar la información del pokemon así como su imagen en el modal creado
--> Mostrar la información de evoluciones y pre evoluciones de el pokemon seleccionado así como sus imágenes correspondientes .
+-> Crear un modal para mostrar la información del pokémon seleccionado.
+-> Mostrar la información del pokémon  así como su imagen en el modal creado.
+-> Mostrar la información de evoluciones y pre evoluciones de el pokémon  seleccionado así como sus imágenes correspondientes.
 
-#### El usuario necesita  un boton que le permita ordenar de manera alfabeticamente 
+#### El usuario necesita  un botón que le permita ordenar de manera alfabéticamente 
 #### D.O.D 
--> rear boton para poder ordenar de manera alfabetica
--> crear una funcion en JS que realice la acción de ordenar 
+-> Crear botón para poder ordenar alfabéticamente.
+-> Crear una función en JS que realice la acción de ordenar. 
 
-#### El usuario necesita de dos  menus desplegables que le permitan realizar los siguientes filtros: selección por tipo y selección por debilidad
+#### El usuario necesita de dos  menús desplegables que le permitan realizar los siguientes filtros: selección por tipo y selección por debilidad
 #### D.O.D 
--> rear menus desplegables en HTML
--> crear  funciones en JS que realice las acción de filtrar
+-> Crear menús desplegables en HTML.
+-> Crear  funciones en JS que realice las acción de filtrar.
+
+## Prototipo de baja fidelidad
+
+En este caso se diseño solo 1 prototipo de baja fidelidad simulando todas las vistas de pantalla que se esperaba tener , para que el equipo nos diéramos una idea de por donde y como íbamos a empezar a trabajar.
+
+![Primer y único prototipo baja fidelidad](https://res.cloudinary.com/lexyfeer/image/upload/v1551895038/20190306_114347.jpg)
 
 ## Prototipos de alta fidelidad
 
-los siguientes prototipos fueron realizados en la plataforma de diseño llamada Figma. 
+Los siguientes prototipos fueron realizados en la plataforma de diseño llamada Figma. 
 
-fueron diseñados para la pantalla de una computadora de escritorio, y se realizaron tres diseños :  Prototipo para pantalla principal, Prototipo para pantalla de inicio y prototipo para pantalla de información de cada pokemon 
+Fueron diseñados para la pantalla de una computadora de escritorio, y se realizaron tres diseños :  Prototipo para pantalla principal, Prototipo para pantalla de inicio y prototipo para pantalla de información de cada pokémon 
 
 ### Prototipo para pantalla principal
-![enter image description here](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551669887/prototipo_pagina_principal.png)
+![Prototipo para pantalla principal](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551669887/prototipo_pagina_principal.png)
 
 ### Prototipo para pantalla de inicio
-![enter image description here](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551669972/prototipo_inicio.jpg)
+![Prototipo para pantalla de inicio](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551669972/prototipo_inicio.jpg)
 
 ### Prototipo para pantalla de información
-![enter image description here](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551670063/Untitled.jpg) 
+![Prototipo para pantalla de información](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551670063/Untitled.jpg) 
 
 
 ## Checklist
