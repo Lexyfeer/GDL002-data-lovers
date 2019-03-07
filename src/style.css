@@ -1,3 +1,12 @@
+/*@import url(menu.css);/*esta linea lo que hace es importar "equis archivo de css a nuestra pestaña de archivos principal de esta forma en HTML solo tendriamos que ligar una sola pestaña de estilos y no muchas pestañas"*/
+
+/*haciendo reset del css default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
     background-image: url("imagenes pokemon/pokemon collage.jpg"); 
 }
@@ -21,17 +30,28 @@ background:#D3D3D3;
 }
 
 header {
+  width: 100%;
+  height: 90px;
   background: rgb(35, 20, 20,0.5);
   margin: auto;
   border-radius: 15px;
-  padding: 10px; 
+  padding: 10px;
+  /*position: fixed; /*fixed lo que hace es que en este caso el menu quede pegado hasta arriba de la pagina, junto con top, left y z index que le indican desde donde empieza*/
+  /*top: 0;
+  left: 0;
+  z-index: 100;*/
 }
 
-/*header img {
-  float:right;
-  height:110px;
-  width: 600px;
-  }*/
+header img.logo {
+  float:left;
+  height:100%;
+  width: 50%;
+  }
+
+  .btnMenu {
+    float:right;
+    height:100%;
+  }
 
   div.ordenar {
     text-align: center;
