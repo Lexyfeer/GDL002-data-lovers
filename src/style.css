@@ -1,4 +1,7 @@
 /*@import url(menu.css);/*esta linea lo que hace es importar "equis archivo de css a nuestra pestaña de archivos principal de esta forma en HTML solo tendriamos que ligar una sola pestaña de estilos y no muchas pestañas"*/
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600|Ubuntu|ZCOOL+QingKe+HuangYou');
 
 /*haciendo reset del css default*/
 * {
@@ -7,71 +10,76 @@
   box-sizing: border-box;
 }
 
-html{
-    background-image: url("imagenes pokemon/pokemon collage.jpg"); 
+.container {
+  width:98%;
+  margin:auto;
 }
 
-body {
-  padding: 10px 5px;
-  position:relative;
+html{
+    background-image: url("imagenes pokemon/pokemon collage.jpg");
+    width: 100%;
+}
+
+ body {
+  padding: 10px 5px 10px 5px;
+  margin: 5% auto;
 }
 
 .card:hover{
-background:#D3D3D3; 
+background:rgb(240, 225, 15); 
 }
 
-#content {
-    background: rgb(240, 248, 255,0.5);
-    /*height: 1100em;*/
+.contentInfo {
+    background: rgba(1, 11, 19, 0.8);
+    width: 90%;
     text-align: center;
-    margin: auto 5% 5%;
-    border-radius: 25px;
-    padding: 30px 40px 30px 40px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 15px;
+    padding: 13px;
+    /* height: 100%;   */
 }
 
 header {
   width: 100%;
-  height: 90px;
-  background: rgb(35, 20, 20,0.5);
-  margin: auto;
-  border-radius: 15px;
-  padding: 10px;
+  height: 17%;
+  background: rgb(3, 62, 180);
+  position: absolute;
   /*position: fixed; /*fixed lo que hace es que en este caso el menu quede pegado hasta arriba de la pagina, junto con top, left y z index que le indican desde donde empieza*/
-  /*top: 0;
+  top: 0;
   left: 0;
-  z-index: 100;*/
+  z-index: 100;
+  padding: 10px;
 }
 
 header img.logo {
   float:left;
   height:100%;
-  width: 50%;
   }
 
   .btnMenu {
     float:right;
     height:100%;
   }
-
-  div.ordenar {
+  
+  nav.ordenar {
     text-align: center;
-    background:rgb(255,255,255,0.5);
     border-radius: 15px;
     padding:13px;
     font-size: 20px;
-    font-family:cursive, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    margin: auto 5%;
-    margin-top: 5%;
     border: 2px solid black;
+    margin-top: 1%;
+    color: bisque;
     }
     
 .card{
-    background:rgb(255, 255, 255);
-    opacity: 100%;
-    padding: 10px 40px;
+    background:rgb(245, 237, 237);
+    padding: 10px 20px;
     border-radius: 15px;
-    max-height: 200px;
+    max-height: 250px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .pkm-thmb {
@@ -97,6 +105,7 @@ header img.logo {
 }
 h2{
     color: rgb(27, 20, 20);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Modal Header */
@@ -117,7 +126,7 @@ h2{
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
    /* height: 100%;*/
-    font-family: cursive, sans-serif;
+   font-family: 'Poppins', sans-serif;
   }
   /* The Close Button */
 .close {
@@ -134,39 +143,40 @@ h2{
 }
 
 #averages {
-    background:rgb(255,255,255,0.7);
+    /* background:rgb(1, 11, 19, 0.8); */
     border-radius: 15px;
+    color: bisque;
+    font-family: 'Ubuntu', sans-serif;
 }
     
-#ocultar {
+.contentInfoIndex {
   background: rgb(240, 248, 255,0.8);
   max-width: 90%;
   text-align: justify;
-  margin: 5% 5%;
+  margin: 5% auto;
   border-radius: 25px;
   padding: 30px 40px 30px 40px;
 }
 
-div #ocultar h1 {
+section.welcome h1 {
+  color:rgba(238, 26, 26, 0.815);
+  -webkit-text-stroke-width: 1px;
   text-align: center;
+  margin: 4% auto;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 75px;
   padding: 5px;
-  margin: 5px;
-  color:rgba(8, 211, 247, 0.815);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  font-family:cursive, sans-serif;
-  font-size: 70px;
 }
 
-div #ocultar p {
+section.welcome p {
   text-align: justify;
   color:rgb(0, 0, 0);
-  font-family:cursive, sans-serif;
+  font-family:'Poppins', sans-serif;
   font-size: 20px;
 }
 
 .infoBanner {
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
@@ -192,7 +202,7 @@ p.text-banner {
 	display:inline-block;/* or block */
   position:relative;
   top:50%;
-  left: 60%;
+  left: 50%;
 	border-color:rgb(22, 3, 3);
 	text-decoration:none;
 	transition:all .3s ease-out;

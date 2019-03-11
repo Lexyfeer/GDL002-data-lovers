@@ -168,7 +168,7 @@ function fillCardTemplate(pokemon) {
 // llena el modal de informacion del pokemon
 function fillPokemonInfo(pokemon) {
   let result = pokemonInfoTemplate
-  .replace("{pokemon.img}",pokemon.img)
+    .replace("{pokemon.img}",pokemon.img)
     .replace("{pokemon.name}", pokemon.name)
     .replace("{pokemon.number}", pokemon.num)
     .replace("{pokemon.number}", pokemon.num)
