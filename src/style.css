@@ -20,28 +20,15 @@ section {
   margin-bottom: 7em;
 }
 
-html{
+/* html{
     background-image: url("imagenes pokemon/pokemon collage.jpg");
-}
-
- /* body {
-  padding: 5em auto;
-  margin: 3em auto;
 } */
 
-.card:hover{
-background:rgb(240, 225, 15); 
-}
-
-.contentInfo {
-    background: rgba(1, 11, 19, 0.8);
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    border-radius: 2em;
-    padding: 1em;
-    height: 100%;
+ body {
+   background-image: url("imagenes pokemon/pokemon collage.jpg");
+   width: 100%;
+  /* padding: auto; */
+  /* margin: 3em auto; */
 }
 
 header.container {
@@ -73,104 +60,13 @@ header img.logo {
     /* margin-top: .5em;
     margin-bottom: .5em; */
   }
-  
-  nav.ordenar {
-    text-align: center;
-    border-radius: 2em;
-    padding:1em;
-    font-size: 1.2em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bolder;
-    border: .1em solid black;
-    margin-top: 1%;
-    color: bisque;
-    }
-    
-.card {
-    background:rgb(245, 237, 237);
-    margin: 1em auto;
-    padding: 1em 3.5em;
-    border-radius: .15em;
-    /* max-height: 100%;
-    max-width: 100%; */
-    display: inline-block;
-    font-family: 'Ubuntu', sans-serif;
-}
 
-.pkm-thmb {
-  height: 100%;
-  max-width: 100%;
-}
-
-.pkm{
-  max-height:100%;
-  max-width: 100%;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    /* z-index: 1;  Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgb(0, 0, 0, 0.5); /* Black w/ opacity */
-}
-h2{
-    color: rgb(27, 20, 20);
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Modal Header */
-.modal-header, .evolutions,.preevolutions {
-  padding: .5em .16em;
-  background-color: #d8ecd8;
-  color: rgb(3, 3, 3);
-}
-/* Modal Body */
-.modal-body {
-  padding: .5em .16em;
-}
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 3em;
-    border: .1em solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-   /* height: 100%;*/
-   font-family: 'Poppins', sans-serif;
-  }
-  /* The Close Button */
-.close {
-    color: rgb(37, 35, 35);
-    float: right;
-    /* font-size: 28em; */
-    font-weight: bolder;
-  }
-.close:hover,
-.close:focus {
-  color: red;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-#averages {
-    /* background:rgb(1, 11, 19, 0.8); */
-    border-radius: .15em;
-    color: bisque;
-    font-family: 'Ubuntu', sans-serif;
-}
-    
 .contentInfoIndex {
   background: rgb(240, 248, 255,0.8);
   max-width: 90%;
   text-align: justify;
   margin: auto;
+  margin-bottom: 1.5em;
   border-radius: .5em;
   padding: 1em 1em 1em 1em;
 }
@@ -222,6 +118,114 @@ p.text-banner {
   /* font-size: 1em; */
 }
 
+.contentInfo {
+    background: rgba(1, 11, 19, 0.8);
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+    border-radius: 2em;
+    padding: 1em;  
+}
+
+  nav.ordenar {
+    text-align: center;
+    border-radius: 2em;
+    padding:1em;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    border: .1em solid black;
+    margin-top: 1%;
+    color: bisque;
+    }
+    
+.card {
+    background:rgb(245, 237, 237);
+    margin: 1em auto;
+    padding: 1em 3.5em;
+    border-radius: .15em;
+    /* max-height: 100%;
+    max-width: 100%; */
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card:hover{
+  background:rgb(240, 225, 15); 
+  }
+
+.pkm-thmb {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.pkm{
+  max-height:100%;
+  max-width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    /* z-index: 1;  Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgb(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+h2 {
+    color: rgb(27, 20, 20);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Modal Header */
+.modal-header, .evolutions,.preevolutions {
+  padding: .5em .16em;
+  background-color: #d8ecd8;
+  color: rgb(3, 3, 3);
+}
+/* Modal Body */
+.modal-body {
+  padding: .5em .16em;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 3em;
+    border: .1em solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+   /* height: 100%;*/
+   font-family: 'Poppins', sans-serif;
+  }
+  /* The Close Button */
+.close {
+    color: rgb(37, 35, 35);
+    float: right;
+    /* font-size: 28em; */
+    font-weight: bolder;
+  }
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#averages {
+    /* background:rgb(1, 11, 19, 0.8); */
+    border-radius: .15em;
+    color: bisque;
+    font-family: 'Ubuntu', sans-serif;
+}
+    
 .to-top{
 	color:black;
 	padding-top:1.8em;
@@ -261,20 +265,21 @@ p.text-banner {
 	padding-top:1.8em;
 	display:inline-block;/* or block */
   position:relative;
-  left: 80%;
+  top: 4em;
+  left: 75%;
 	border-color:rgb(22, 3, 3);
   text-decoration:none;
-  text-align:center;
-  font-family: cursive, sans-serif;
+  /* text-align:center; */
+  font-family: sans-serif;
   /* font-size:180%; */
-  margin:auto;
+  /* margin:auto; */
 	transition:all .3s ease-out;
 }
 #ancla:before {
 	content:'▲';
 	font-size:.60em;
 	position:absolute;
-	top:0%;
+	top:2%;
 	left:40%;
 	margin-left:-.9em;
 	border:solid .20em rgb(146, 231, 48);
