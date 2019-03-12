@@ -1,65 +1,110 @@
-html{
-    background-image: url("imagenes pokemon/pokemon collage.jpg"); 
+/*@import url(menu.css);/*esta linea lo que hace es importar "equis archivo de css a nuestra pestaña de archivos principal de esta forma en HTML solo tendriamos que ligar una sola pestaña de estilos y no muchas pestañas"*/
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600|Ubuntu|ZCOOL+QingKe+HuangYou');
+
+/*haciendo reset del css default*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  padding: 10px 5px;
-  position:relative;
+.container {
+  width:100%;
+  margin:auto;
 }
+
+section {
+  width: 100%;
+  margin-bottom: 7em;
+}
+
+html{
+    background-image: url("imagenes pokemon/pokemon collage.jpg");
+}
+
+ /* body {
+  padding: 5em auto;
+  margin: 3em auto;
+} */
 
 .card:hover{
-background:#D3D3D3; 
+background:rgb(240, 225, 15); 
 }
 
-#content {
-    background: rgb(240, 248, 255,0.5);
-    /*height: 1100em;*/
+.contentInfo {
+    background: rgba(1, 11, 19, 0.8);
+    width: 90%;
     text-align: center;
-    margin: auto 5% 5%;
-    border-radius: 25px;
-    padding: 30px 40px 30px 40px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 2em;
+    padding: 1em;
+    height: 100%;
+}
+
+header.container {
+  display: table;
 }
 
 header {
-  background: rgb(35, 20, 20,0.5);
-  margin: auto;
-  border-radius: 15px;
-  padding: 10px; 
+  width: 100%;
+  height: 15%;
+  background: rgb(3, 62, 180);
+  position: absolute;
+  /*position: fixed; /*fixed lo que hace es que en este caso el menu quede pegado hasta arriba de la pagina, junto con top, left y z index que le indican desde donde empieza*/
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1em;
 }
 
-/*header img {
-  float:right;
-  height:110px;
-  width: 600px;
-  }*/
+header img.logo {
+  float:left;
+  height:100%;
+  }
 
-  div.ordenar {
+  .btnMenu {
+    float:right;
+    height:100%;
+    margin: auto;
+    /* padding: .5em; */
+    /* margin-top: .5em;
+    margin-bottom: .5em; */
+  }
+  
+  nav.ordenar {
     text-align: center;
-    background:rgb(255,255,255,0.5);
-    border-radius: 15px;
-    padding:13px;
-    font-size: 20px;
-    font-family:cursive, sans-serif;
+    border-radius: 2em;
+    padding:1em;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    margin: auto 5%;
-    margin-top: 5%;
-    border: 2px solid black;
+    border: .1em solid black;
+    margin-top: 1%;
+    color: bisque;
     }
     
-.card{
-    background:rgb(255, 255, 255);
-    opacity: 100%;
-    padding: 10px 40px;
-    border-radius: 15px;
-    max-height: 200px;
+.card {
+    background:rgb(245, 237, 237);
+    margin: 1em auto;
+    padding: 1em 3.5em;
+    border-radius: .15em;
+    /* max-height: 100%;
+    max-width: 100%; */
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .pkm-thmb {
-  height: 50%;
+  height: 100%;
+  max-width: 100%;
 }
 
 .pkm{
-  height:100% ;
+  max-height:100%;
+  max-width: 100%;
 }
 
 /* The Modal (background) */
@@ -77,33 +122,34 @@ header {
 }
 h2{
     color: rgb(27, 20, 20);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Modal Header */
 .modal-header, .evolutions,.preevolutions {
-  padding: 5px 16px;
+  padding: .5em .16em;
   background-color: #d8ecd8;
   color: rgb(3, 3, 3);
 }
 /* Modal Body */
 .modal-body {
-  padding: 5px 16px;
+  padding: .5em .16em;
 }
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 3em;
+    border: .1em solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
    /* height: 100%;*/
-    font-family: cursive, sans-serif;
+   font-family: 'Poppins', sans-serif;
   }
   /* The Close Button */
 .close {
     color: rgb(37, 35, 35);
     float: right;
-    font-size: 28px;
+    /* font-size: 28em; */
     font-weight: bolder;
   }
 .close:hover,
@@ -114,74 +160,84 @@ h2{
 }
 
 #averages {
-    background:rgb(255,255,255,0.7);
-    border-radius: 15px;
+    /* background:rgb(1, 11, 19, 0.8); */
+    border-radius: .15em;
+    color: bisque;
+    font-family: 'Ubuntu', sans-serif;
 }
     
-#ocultar {
+.contentInfoIndex {
   background: rgb(240, 248, 255,0.8);
   max-width: 90%;
   text-align: justify;
-  margin: 5% 5%;
-  border-radius: 25px;
-  padding: 30px 40px 30px 40px;
+  margin: auto;
+  border-radius: .5em;
+  padding: 1em 1em 1em 1em;
 }
 
-div #ocultar h1 {
+section.welcome h1 {
+  color:rgba(214, 20, 20);
   text-align: center;
-  padding: 5px;
-  margin: 5px;
-  color:rgba(8, 211, 247, 0.815);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  font-family:cursive, sans-serif;
-  font-size: 70px;
+  margin: auto;
+  margin-bottom: 4%;
+  font-family:'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 3em;
+  padding: .1em;
 }
 
-div #ocultar p {
+section.welcome p {
   text-align: justify;
   color:rgb(0, 0, 0);
-  font-family:cursive, sans-serif;
-  font-size: 20px;
+  font-family:'Poppins', sans-serif;
+  /* font-size: 1em; */
+}
+
+.content-banner img {
+  position: relative;
+  border-radius: .2em;
+  max-width: 50%;
+  max-height: 50%;
+  /* bottom: 0; */
+  left: 25%;
 }
 
 .infoBanner {
-  display: inline-block;
-  text-align: center;
+  display: block;
+  text-align: justify;
 }
 
 .infoBanner h2 {
-  color:rgb(56, 247, 8);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  color:rgb(214, 20, 20);
   text-align: center;
-  margin: 3% auto;
-  font-family: cursive, sans-serif;
-  font-size: 50px;
+  margin: auto;
+  margin-bottom: 4%;
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 3.5em;
 }
 
 p.text-banner {
-  margin: 3% auto;
-  font-family: cursive, sans-serif;
-  font-size: 18px;
+  margin: auto;
+  margin-bottom: 3%;
+  font-family:'Poppins', sans-serif;
+  /* font-size: 1em; */
 }
 
 .to-top{
 	color:black;
 	padding-top:1.8em;
-	display:inline-block;/* or block */
-  position:relative;
-  top:50%;
-  left: 60%;
+	display:inline-block;/* or inline-block */
+  position: relative;
+  top: 4em;
+  left: 75%;
 	border-color:rgb(22, 3, 3);
 	text-decoration:none;
-	transition:all .3s ease-out;
+  transition:all .3s ease-out;
 }
 .to-top:before{
 	content:'▲';
 	font-size:.9em;
 	position:absolute;
-	top:0;
+	top:2%;
 	left:50%;
 	margin-left:-.7em;
 	border:solid .13em white;
@@ -190,7 +246,7 @@ p.text-banner {
 	height:1.4em;
 	line-height:1.3em;
 	border-color:inherit;
-	transition:transform .5s ease-in;
+  transition:transform .5s ease-in;
 }
 .to-top:hover{
 	color:rgb(250, 74, 103);
@@ -210,7 +266,7 @@ p.text-banner {
   text-decoration:none;
   text-align:center;
   font-family: cursive, sans-serif;
-  font-size:180%;
+  /* font-size:180%; */
   margin:auto;
 	transition:all .3s ease-out;
 }

@@ -1,14 +1,14 @@
-* {
+/* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
+}*/
 
-.container {
+/*.container {
     width: 100;
     max-width: 1000px;
     margin: 0 auto;
-}
+}*/
 
 .row:before, .row:after {
     content: "";
@@ -35,14 +35,14 @@
 .col-11 { width: 91.66666667%; }
 .col-12 { width: 100%; }
 
-@media screen and (max-width:800px) {
+/*@media screen and (max-width:800px) {
     [class*="col-"] {
         width: 100%;
     }
 
     /*ejemplo de como podria funcionar que algunas columnas si se mantuvieran en version movil.
-        la col-1, que media 8.33% cambiaria a 33.3%, eso quiere decir 3 columnas por row en lugar de 12 */
+        la col-1, que media 8.33% cambiaria a 33.3%, eso quiere decir 3 columnas por row en lugar de 12 
     .col-1 {
         width: 33.33333333% !important;
     }
-}
+}*/

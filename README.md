@@ -58,8 +58,8 @@ Después una vez que habíamos agregado un recuadro con los botones y selectores
 
 #### El usuario necesita una pagina donde pueda visualizar todos los Pokémon en orden numérico
 #### D.O.D 
--> Mostrar todos los pokémon en hileras de cuatro.
--> Mostrar los pokémon por orden numérico.
+-> Mostrar todos los Pokémon en hileras de cuatro.
+-> Mostrar los Pokémon por orden numérico.
 -> Mostrar cada imagen con su nombre correspondiente.
 
 #### El usuario necesita que la pagina pueda adaptarse a diferentes pantallas para que pueda visualizarla en cualquiera de sus dispositivos
@@ -72,13 +72,13 @@ Después una vez que habíamos agregado un recuadro con los botones y selectores
 #### D.O.D 
 -> Crear los botones Home y Pokedex que sirvan para desplazarse dentro de la pagina.
 -> Ingresar el texto de bienvenida.
--> Crear un banner que muestre tres imágenes referentes a pokémon.
+-> Crear un banner que muestre tres imágenes referentes a Pokémon.
 
-#### El usuario necesita que al hacer click en la imagen de cualquier pokémon le despliegue  un cuadro de texto para que le muestre la información completa del pokémon seleccionado
+#### El usuario necesita que al hacer click en la imagen de cualquier Pokémon le despliegue  un cuadro de texto para que le muestre la información completa del Pokémon seleccionado
 #### D.O.D 
--> Crear un modal para mostrar la información del pokémon seleccionado.
--> Mostrar la información del pokémon  así como su imagen en el modal creado.
--> Mostrar la información de evoluciones y pre evoluciones de el pokémon  seleccionado así como sus imágenes correspondientes.
+-> Crear un modal para mostrar la información del Pokémon seleccionado.
+-> Mostrar la información del Pokémon  así como su imagen en el modal creado.
+-> Mostrar la información de evoluciones y pre evoluciones de el Pokémon  seleccionado así como sus imágenes correspondientes.
 
 #### El usuario necesita  un botón que le permita ordenar de manera alfabéticamente 
 #### D.O.D 
@@ -100,7 +100,7 @@ En este caso se diseño solo 1 prototipo de baja fidelidad simulando todas las v
 
 Los siguientes prototipos fueron realizados en la plataforma de diseño llamada Figma. 
 
-Fueron diseñados para la pantalla de una computadora de escritorio, y se realizaron tres diseños :  Prototipo para pantalla principal, Prototipo para pantalla de inicio y prototipo para pantalla de información de cada pokémon 
+Fueron diseñados para la pantalla de una computadora de escritorio, y se realizaron tres diseños :  Prototipo para pantalla principal, Prototipo para pantalla de inicio y prototipo para pantalla de información de cada Pokémon 
 
 ### Prototipo para pantalla principal
 ![Prototipo para pantalla principal](https://res.cloudinary.com/dn98ljs5k/image/upload/v1551669887/prototipo_pagina_principal.png)

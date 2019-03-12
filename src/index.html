@@ -1,129 +1,136 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Data Lovers</title>
-    <link rel="icon" href="imagenes pokemon/007_Squirtle_icon.ico">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="grid.css" />
-  </head>
-  <body>
-    <div id="root" class="container">
-      <a id="inicio"></a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Lovers</title>
+  <link rel="icon" href="imagenes pokemon/007_Squirtle_icon.ico" />
+  <!-- <link rel="stylesheet" href="grid.css" /> -->
+</head>
 
-      <!-- Header -->
-      <header class="row"><img  class="col-3" src="imagenes pokemon/pokemon txt.png" alt="texto POKEMON"/>
+<body>
+  <!--<div id="root" class="container">-->
+    <a id="inicio"></a>
 
-      <div class="col-3"></div>
-      <div class="col-3"></div>
+    <section>
+    <!-- Header -->
+      <header class="container">
+      <img src="imagenes pokemon/pokemon txt.png" class="logo" alt="texto POKEMON" />
 
-      <div class="col-3">
-        <a href="#contenido" ><input type="image" id="btn1" src="imagenes pokemon/Pokeball.png"  width="100px"/></a>
+      <a href="#contenido"><input type="image" class="btnMenu" id="btn1" src="imagenes pokemon/Pokeball.png" /></a>
 
-        <a href="#inicio" ><input  type="image"  id="btn2"  src="imagenes pokemon/home-2.png" width="100px" /></a>
-      </div>
+      <a href="#inicio"><input type="image" class="btnMenu" id="btn2" src="imagenes pokemon/home-2.png" /></a>
+
       </header>
-    </div>
+    </section>
+   <!--</div>-->
 
     <!-- Pantalla bienvenida -->
-    <div class="row">
-      <div id="ocultar" class="col-12" style="display:block;">
-          <div class="col-12">
-            <h1>Bienvenidos</h1>
-          </div>
-          <div class="col-12">
-            <p>En este sitio podrás descubrir más sobre tus pokemón favoritos; desde sus debilidades, fortalezas hasta su o sus evoluciones.</p><br/>
-            <p> Estos monstruitos japoneses nacieron en 1995 en forma de videojuego. Algunos recordarán también la exitosa serie de animación que protagonizaron. Aunque los adultos hacía tiempo que no oían hablar de ellos.</p><br/>
-            <p>Si te has sumado a la moda de Pokémon Go, quizá tus recuerdos estén un poco difusos. ¿Los afinamos? Sólo hace falta refrescar los 151 pokémones originales, ya que son los únicos que hay en el juego.<br/>Tan solo tienes que hacer <b>'CLICK'</b> en la <b>POKEBOLA</b>.</p>
-          </div>
-          <form name="f1">
-          <div class="col-3"></div>
-          <!-- <input type="button" value="&lt;&lt;" onclick="go()"> -->
-          <div class="conten-banner">
-            <img name="banner" class="col-6" alt="" />
-          </div>
-          <div class="infoBanner">
-          <div class="col-12">
-            <h2>¿Sabías qué?</h2>
-          </div>
-          <div class="col-12">
-            <p class="text-banner">
-                La palabra pokémon es la contracción de pocket monsters, o sea, monstruos de bolsillo en inglés. En español puede llevar acento y variar en plural, según la RAE (los pokémones, pero también es correcto dejarlo en los pokémon), y lo mismo sucede con cada especie (como los pikachus, los bulbasaurs, etc.). Pero en inglés y japonés no cambia ni la palabra pokémon ni cada tipo.
-            </p>
-          </div>
-          </div>
-          <a href="#inicio" class="to-top">Back to top</a>
-          <!-- <input type="button" value="&gt;&gt;" onclick="back()"> -->
-          <div class="col-3"></div>
-        </form>
-      </div>
-    </div>
+    <div id="ocultar" class="container" style="display:block;">
+      <main class="contentInfoIndex">
+        <section class="welcome">
+          <h1>Bienvenidos</h1>
+          <p>En este sitio podrás descubrir más sobre tus pokemón favoritos; desde sus debilidades, fortalezas hasta su
+            o sus evoluciones.</p><br />
+          <p> Estos monstruitos japoneses nacieron en 1995 en forma de videojuego. Algunos recordarán también la exitosa
+            serie de animación que protagonizaron. Aunque los adultos hacía tiempo que no oían hablar de ellos.</p>
+          <br />
+          <p>Si te has sumado a la moda de Pokémon Go, quizá tus recuerdos estén un poco difusos. ¿Los afinamos? Sólo
+            hace falta refrescar los 151 pokémones originales, ya que son los únicos que hay en el juego.<br />Tan solo
+            tienes que hacer <b>'CLICK'</b> en la <b>POKEBOLA</b>.</p>
+          </section>
 
+            <section class="content-banner">
+              <form name="f1">
+                <img name="banner"  alt="" />
+                <div class="infoBanner">
+                  <h2>¿Sabías qué?</h2>
+                  <p class="text-banner">
+                    La palabra pokémon es la contracción de pocket monsters, o sea, monstruos de bolsillo en inglés. En
+                    español puede llevar acento y variar en plural, según la RAE (los pokémones, pero también es correcto
+                    dejarlo en los pokémon), y lo mismo sucede con cada especie (como los pikachus, los bulbasaurs, etc.).
+                    Pero en inglés y japonés no cambia ni la palabra pokémon ni cada tipo.
+                    </p>
+                  </div>
+                  <a href="#inicio" class="to-top">Back to top</a>
+                </form>
+            </section>
+          </main>
+          </div>
+          <!-- <form name="f1">
+          <div class="row">
+          <div class="conten-banner">
+            <img name="banner" class="col-8"  alt="" />
+          </div> -->
+          <!-- <div class="infoBanner">
+              <h2>¿Sabías qué?</h2>
+              <p class="text-banner">
+                La palabra pokémon es la contracción de pocket monsters, o sea, monstruos de bolsillo en inglés. En
+                español puede llevar acento y variar en plural, según la RAE (los pokémones, pero también es correcto
+                dejarlo en los pokémon), y lo mismo sucede con cada especie (como los pikachus, los bulbasaurs, etc.).
+                Pero en inglés y japonés no cambia ni la palabra pokémon ni cada tipo.
+              </p>
+            </div>
+            <a href="#inicio" class="to-top">Back to top</a>
+          </form> -->
+        <!-- </div> -->
+
+    
     <!-- Div principal para pokedex -->
     <div id="pokedex" style="display:none;">
       <a id="contenido"></a>
+      <main class="contentInfo">
+        <!-- Filtros y formas de ordenar -->
+        <nav class="ordenar">
+          <label>Elige un tipo de vista para mostrar:</label><br />
+          <button id="orderABC">Alfabetico (A-Z)</button>
+          <button id="orderNum">Númerico</button>
+          <select id="select-type">
+            <option selected="true" disabled="disabled">Seleccion por tipo</option>
+          </select>
+          <select id="select-weaknesses">
+            <option selected="true" disabled="disabled">Seleccion por debilidad</option>
+          </select>
+        </nav>
+    
+        <h3 id="averages">
 
-      <!-- Filtros y formas de ordenar -->
-      <div class="ordenar">
-        <label>Elige un tipo de vista para mostrar:</label><br />
-        <button id="orderABC">Alfabetico (A-Z)</button>
-        <button id="orderNum">Númerico</button>
-        <select id="select-type">
-          <option selected="true" disabled="disabled"
-            >Seleccion por tipo</option
-          >
-        </select>
+        </h3>
 
-        <select id="select-weaknesses">
-          <option selected="true" disabled="disabled"
-            >Seleccion por debilidad
-          </option>
-        </select>
-      </div>
-
-
-      <div class="row">
-      <div class="col-1"></div>
-      <h3 id="averages" class="col-10">
-
-      </h3>
-      <div class="col-1"></div>
-      </div>
-
-      <div id="content" class="row">
+        <div id="content">
         <!-- Lista de pokemon dinamica -->
 
-      </div>
-      <div class="row">
+        </div>
+      
         <a href="#inicio" id="ancla" class="to-top">Back to top</a>
-      </div>
       
-            
-      
+    </main>
+    </div>
+
 
       <!-- The Modal -->
       <div id="info-modal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2 id="info-modal-header"></h2>
-        </div>
-        <div id="info-modal-body" class="modal-body">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2 id="info-modal-header"></h2>
+          </div>
+          <div id="info-modal-body" class="modal-body">
+          </div>
         </div>
       </div>
-    </div><!--fin del modal-->
+      <!--fin del modal-->
 
-    </div><!--aqui cierra el div del pokedex-->
-  
-
+    </div>
+    <!--aqui cierra el div del pokedex-->
   
 
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </body>
 
 </html>

@@ -46,18 +46,17 @@ let weaknessesArray = [
   "Dragon"
 ];
 // template para las tarjetas de la lista del pokemon
-let cardTemplate = `<div class="col-3">
+let cardTemplate = `
 <div class="card" id="{pokemon.number}" >
 <img class="pkm-thmb" src="{pokemon.img}" alt="{pokemon.name}">
 <div class="name">
- <h3>{pokemon.name}</h3>
+ <h4>{pokemon.name}</h4>
 </div>
 <div class="number">
- <h3>{pokemon.number}</h3>
+ <h4>{pokemon.number}</h4>
 </div>
 <div class="type">
-<h3>{pokemon.type}</h3>
-</div>
+<h4>{pokemon.type}</h4>
 </div>
 </div>`;
 
@@ -168,7 +167,7 @@ function fillCardTemplate(pokemon) {
 // llena el modal de informacion del pokemon
 function fillPokemonInfo(pokemon) {
   let result = pokemonInfoTemplate
-  .replace("{pokemon.img}",pokemon.img)
+    .replace("{pokemon.img}",pokemon.img)
     .replace("{pokemon.name}", pokemon.name)
     .replace("{pokemon.number}", pokemon.num)
     .replace("{pokemon.number}", pokemon.num)

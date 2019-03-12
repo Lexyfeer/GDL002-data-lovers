@@ -19,7 +19,5 @@ window.dataLovers = {
   },
   getPokemonByWeaknessesFilter: weaknesses => {
     return pokemonDb.array.filter(p => p.weaknesses.indexOf(weaknesses) > -1);
-
-
   }
 };
