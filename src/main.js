@@ -50,7 +50,7 @@ let cardTemplate = `
 <div class="card" id="{pokemon.number}" >
 <img class="pkm-thmb" src="{pokemon.img}" alt="{pokemon.name}">
 <div class="name">
- <h4>{pokemon.name}</h4>
+ <h3>{pokemon.name}</h3>
 </div>
 <div class="number">
  <h4>{pokemon.number}</h4>
@@ -64,20 +64,19 @@ let cardTemplate = `
 let pokemonInfoTemplate = `
 <div>
   <div id="{pokemon.number}">
-  <div class="row">
-  <div class= "col-5">
+  </div>
+  <div>
     <img class="pkm" src="{pokemon.img}" alt="{pokemon.name}">
     </div>
-    <div class="col-7">
-    <div class="number">
+    <span class="number">
       <h3>Número:  {pokemon.number}</h3>
-    </div>
-    <div class="type">
+    </span>
+    <span class="type">
       <h3>Es un pokemón de tipo: {pokemon.type}</h3>
-    </div>
-    <div class="weaknesses">
+    </span>
+    <span class="weaknesses">
       <h3> Su debilidad son los pokemon de tipo: {pokemon.debilidad}</h3>
-    </div>
+    </span>
     </div>
     </div>
     <div class="next_evolution">
@@ -90,7 +89,6 @@ let pokemonInfoTemplate = `
       {pokemon.prev.img}
       <h4>{pokemon.prev_evolutions}</h4>
     </div>
-  </div>
 </div>`;
 
 // asignacion de event listeners

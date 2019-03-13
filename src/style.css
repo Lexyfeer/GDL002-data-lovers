@@ -17,7 +17,7 @@
 
 section {
   width: 100%;
-  margin-bottom: 7em;
+  margin-bottom: 4.5rem;
 }
 
 /* html{
@@ -37,14 +37,14 @@ header.container {
 
 header {
   width: 100%;
-  height: 15%;
+  height: 4.5rem;
   background: rgb(3, 62, 180);
   position: absolute;
   /*position: fixed; /*fixed lo que hace es que en este caso el menu quede pegado hasta arriba de la pagina, junto con top, left y z index que le indican desde donde empieza*/
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 1em;
+  padding: .5rem;
 }
 
 header img.logo {
@@ -66,19 +66,20 @@ header img.logo {
   max-width: 90%;
   text-align: justify;
   margin: auto;
-  margin-bottom: 1.5em;
-  border-radius: .5em;
-  padding: 1em 1em 1em 1em;
+  margin-bottom: 1.5rem;
+  border-radius: .5rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 section.welcome h1 {
   color:rgba(214, 20, 20);
   text-align: center;
   margin: auto;
-  margin-bottom: 4%;
+  margin-bottom: .5em;
+  margin-top: .2em;
   font-family:'ZCOOL QingKe HuangYou', sans-serif;
-  font-size: 3em;
-  padding: .1em;
+  font-size: 3.5rem;
+  padding: .1rem;
 }
 
 section.welcome p {
@@ -89,17 +90,21 @@ section.welcome p {
 }
 
 .content-banner img {
-  position: relative;
-  border-radius: .2em;
-  max-width: 50%;
-  max-height: 50%;
-  /* bottom: 0; */
-  left: 25%;
+  /* border: solid black .2em; */
+  /* position: relative; */
+  /* left: 1rem; */
+  border-radius: 4rem;
+  width: 20rem;
+  height: 10rem;
+  /* bottom: 50; */
+  margin: auto;
+  /* margin-bottom: 2.5em; */
+  padding: 1rem 3rem;
 }
 
 .infoBanner {
   display: block;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .infoBanner h2 {
@@ -108,12 +113,12 @@ section.welcome p {
   margin: auto;
   margin-bottom: 4%;
   font-family: 'ZCOOL QingKe HuangYou', sans-serif;
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 
 p.text-banner {
   margin: auto;
-  margin-bottom: 3%;
+  /* margin-bottom: 3%; */
   font-family:'Poppins', sans-serif;
   /* font-size: 1em; */
 }
@@ -123,29 +128,31 @@ p.text-banner {
     height: 100%;
     width: 90%;
     text-align: center;
-    margin: auto;
-    margin-top: 2em;
-    border-radius: 2em;
-    padding: 1em;  
+    margin: 1rem auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;  
 }
 
   nav.ordenar {
     text-align: center;
-    border-radius: 2em;
-    padding:1em;
-    font-size: 1.2em;
+    border-radius: 2rem;
+    padding:1rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
-    border: .1em solid black;
+    border: .1rem solid black;
     margin-top: 1%;
     color: bisque;
     }
     
 .card {
     background:rgb(245, 237, 237);
-    margin: 1em auto;
-    padding: 1em 3.5em;
-    border-radius: .15em;
+    width: 15rem;
+    height: 15rem;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
     /* max-height: 100%;
     max-width: 100%; */
     display: inline-block;
@@ -171,8 +178,8 @@ p.text-banner {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     /* z-index: 1;  Sit on top */
-    left: 0;
-    top: 0;
+    left: 0em;
+    top: 0em;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -187,30 +194,36 @@ h2 {
 
 /* Modal Header */
 .modal-header, .evolutions,.preevolutions {
-  padding: .5em .16em;
-  background-color: #d8ecd8;
+  padding: .5rem .16rem;
+  background-color:rgb(5, 148, 243);
   color: rgb(3, 3, 3);
+  width: 100%;
 }
 /* Modal Body */
 .modal-body {
-  padding: .5em .16em;
+  padding: 1rem auto;
+  text-align: center;
 }
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 3em;
-    border: .1em solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-   /* height: 100%;*/
+    background-image: url("imagenes pokemon/pokedex.png");
+    background-repeat: no-repeat;
+    margin: 5.5rem auto; /* 15% from the top and centered */
+    padding: 6.5rem 0rem;
+    border: .1rem solid rgb(216, 6, 6);
+    width: 23rem; /* Could be more or less, depending on screen size */
    font-family: 'Poppins', sans-serif;
+   position: relative;
+   top:0;
+   /* left: 25%; */
   }
   /* The Close Button */
 .close {
     color: rgb(37, 35, 35);
     float: right;
-    /* font-size: 28em; */
-    font-weight: bolder;
+    font-size: 2rem;
+    /* font-weight: bolder; */
   }
 .close:hover,
 .close:focus {
@@ -221,78 +234,79 @@ h2 {
 
 #averages {
     /* background:rgb(1, 11, 19, 0.8); */
-    border-radius: .15em;
+    border-radius: .15rem;
     color: bisque;
     font-family: 'Ubuntu', sans-serif;
 }
     
 .to-top{
 	color:black;
-	padding-top:1.8em;
+	padding-top:2.5rem;
 	display:inline-block;/* or inline-block */
   position: relative;
-  top: 4em;
-  left: 75%;
+  top: 2.5rem;
+  left: 70%;
 	border-color:rgb(22, 3, 3);
-	text-decoration:none;
+  text-decoration:none;
+  font-family: sans-serif;
   transition:all .3s ease-out;
 }
 .to-top:before{
 	content:'▲';
-	font-size:.9em;
+	font-size:.9rem;
 	position:absolute;
-	top:2%;
+	top:3%;
 	left:50%;
-	margin-left:-.7em;
-	border:solid .13em white;
-	border-radius:10em;
-	width:1.4em;
-	height:1.4em;
-	line-height:1.3em;
+	margin-left:-.7rem;
+	border:solid .13rem white;
+	border-radius:10rem;
+	width:1.8rem;
+	height:1.8rem;
+	line-height:1.3rem;
 	border-color:inherit;
   transition:transform .5s ease-in;
 }
 .to-top:hover{
-	color:rgb(250, 74, 103);
-	border-color:rgb(206, 21, 52);
+	color:rgb(7, 90, 245);
+	border-color:rgb(255, 15, 15);
 }
 .to-top:hover:before{
 	transform: rotate(360deg);
 }
 
 #ancla {
-	color:black;
-	padding-top:1.8em;
+	color:rgb(255, 251, 251);
+	padding-top:1.8rem;
 	display:inline-block;/* or block */
   position:relative;
-  top: 4em;
-  left: 75%;
-	border-color:rgb(22, 3, 3);
+  top: -5.5rem;
+  left: 85%;
+	border-color:rgb(253, 252, 252);
   text-decoration:none;
   /* text-align:center; */
   font-family: sans-serif;
   /* font-size:180%; */
-  /* margin:auto; */
+  /* margin:-1em; */
 	transition:all .3s ease-out;
 }
 #ancla:before {
 	content:'▲';
-	font-size:.60em;
+	font-size:.70rem;
 	position:absolute;
-	top:2%;
+	top:-1rem;
 	left:40%;
-	margin-left:-.9em;
-	border:solid .20em rgb(146, 231, 48);
-	border-radius:30em;
-	width:3em;
-	height:3em;
-	line-height:3em;
+	margin-left:-.6rem;
+	border:solid .14rem rgb(146, 231, 48);
+	border-radius:2rem;
+	width:2rem;
+	height:2rem;
+	line-height:2rem;
 	border-color:inherit;
 	transition:transform .5s ease-in;
 }
 #ancla:hover {
-	color:rgb(21, 132, 206);
-	border-color:rgb(167, 27, 27);
+	color:rgb(229, 255, 0);
+	border-color:rgb(255, 15, 15);
 }
 #ancla:hover:before {
 	transform: rotate(360deg);
