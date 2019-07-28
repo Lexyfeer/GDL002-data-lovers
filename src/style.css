@@ -1,6 +1,3 @@
-/*@import url(menu.css);/*esta linea lo que hace es importar "equis archivo de css a nuestra pestaña de archivos principal de esta forma en HTML solo tendriamos que ligar una sola pestaña de estilos y no muchas pestañas"*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:600|Ubuntu|ZCOOL+QingKe+HuangYou');
-
 /*haciendo reset del css default*/
 * {
   margin: 0;
@@ -21,6 +18,19 @@ section {
 body {
   background-image: url("imagenes pokemon/pokemon collage.jpg");
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Righteous', sans-serif;
+}
+
+p {
+  font-family: 'Blinker', sans-serif;
 }
 
 header.container {
@@ -61,20 +71,18 @@ header img.logo {
 }
 
 section.welcome h1 {
+  font-size: 3.5rem;
   color: rgba(214, 20, 20);
   text-align: center;
   margin: auto;
   margin-bottom: .5em;
   margin-top: .2em;
-  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
-  font-size: 3.5rem;
   padding: .1rem;
 }
 
 section.welcome p {
   text-align: justify;
   color: rgb(0, 0, 0);
-  font-family: 'Poppins', sans-serif;
 }
 
 .content-banner img {
@@ -91,17 +99,15 @@ section.welcome p {
 }
 
 .infoBanner h2 {
+  font-size: 3.5rem;
   color: rgb(214, 20, 20);
   text-align: center;
   margin: auto;
   margin-bottom: 4%;
-  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
-  font-size: 3.5rem;
 }
 
 p.text-banner {
   margin: auto;
-  font-family: 'Poppins', sans-serif;
 }
 
 .contentInfo {
@@ -119,15 +125,29 @@ nav.ordenar {
   border-radius: 2rem;
   padding: 1rem;
   font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
+  font-family: 'Blinker', sans-serif;
   border: .1rem solid black;
   margin-top: 1%;
   color: bisque;
 }
 
+.btnOrder {
+  font-size: 1rem;
+  height: 3rem;
+  margin: .5rem;
+  padding: .3rem;
+  background-color: rgb(199, 26, 26);
+  color: white;
+  border-radius: .2rem;
+  transition: 01s;
+}
+
+.btnOrder:hover {
+  background-color: rgb(10, 10, 10);
+}
+
 .card {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Blinker', sans-serif;
   background: rgb(245, 237, 237);
   width: 15rem;
   height: 15rem;
@@ -135,10 +155,13 @@ nav.ordenar {
   padding: .5rem;
   border-radius: 1rem;
   display: inline-block;
+  border: solid .1rem blue;
+  transition: 1s;
 }
 
 .card:hover {
-  background: rgb(240, 225, 15);
+  background: rgb(252, 255, 76);
+  border: solid .2rem red;
 }
 
 .pkm-thmb {
@@ -174,7 +197,6 @@ nav.ordenar {
 
 h2 {
   color: rgb(27, 20, 20);
-  font-family: 'Poppins', sans-serif;
 }
 
 /* Modal Header */
@@ -196,7 +218,7 @@ h2 {
 /* Modal Content/Box */
 .modal-content {
   width: 19rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Blinker', sans-serif;
   background-color: #fefefe;
   background-image: url("imagenes pokemon/pokedex.png");
   background-repeat: no-repeat;
@@ -227,7 +249,7 @@ h2 {
 }
 
 #averages {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Blinker', sans-serif;
   border-radius: .15rem;
   color: bisque;
 }
@@ -377,6 +399,12 @@ h2 {
     margin-top: 7rem;
   }
 
+  .modal-content {
+    width: 34rem;
+    top: 8rem;
+    margin-bottom: 1rem;
+  }
+
   #ancla {
     width: 6rem;
     top: -6rem;
@@ -411,6 +439,12 @@ h2 {
     border-radius: 2rem;
   }
 
+  .modal-content {
+    width: 34rem;
+    top: 10rem;
+    margin-bottom: 1rem;
+  }
+
   #ancla {
     left: 42rem;
   }
@@ -441,6 +475,12 @@ h2 {
 
   .contentInfo {
     margin-top: 7rem;
+  }
+
+  .modal-content {
+    width: 34rem;
+    top: 10rem;
+    margin-bottom: 1rem;
   }
 
   #ancla {

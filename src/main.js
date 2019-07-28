@@ -56,7 +56,7 @@ let cardTemplate = `
  <h4>{pokemon.number}</h4>
 </div>
 <div class="type">
-<h4>{pokemon.type}</h4>
+<p>{pokemon.type}</p>
 </div>
 </div>`;
 
@@ -72,10 +72,10 @@ let pokemonInfoTemplate = `
       <h3>Número:  {pokemon.number}</h3>
     </span>
     <span class="type">
-      <h3>Es un pokemón de tipo: {pokemon.type}</h3>
+      <p>Es un pokemón de tipo: {pokemon.type}</p>
     </span>
     <span class="weaknesses">
-      <h3> Su debilidad son los pokemon de tipo: {pokemon.debilidad}</h3>
+      <p> Su debilidad son los pokemon de tipo: {pokemon.debilidad}</p>
     </span>
     </div>
     </div>
