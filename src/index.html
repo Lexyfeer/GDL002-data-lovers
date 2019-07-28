@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Data Lovers</title>
   <link rel="icon" href="imagenes pokemon/007_Squirtle_icon.ico" />
-  <!-- <link rel="stylesheet" href="grid.css" /> -->
+  <!-- NORMALIZE.CSS -->
+  <link rel="stylesheet" href="./normalize.css" />
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Tipografias -->
+  <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -66,12 +73,12 @@
       <!-- Filtros y formas de ordenar -->
       <nav class="ordenar">
         <label>Elige un tipo de vista para mostrar:</label><br />
-        <button id="orderABC">Alfabetico (A-Z)</button>
-        <button id="orderNum">Númerico</button>
-        <select id="select-type">
+        <button id="orderABC" class="btnOrder">Alfabetico (A-Z)</button>
+        <button id="orderNum" class="btnOrder">Númerico</button>
+        <select id="select-type" class="btnOrder">
           <option selected="true" disabled="disabled">Seleccion por tipo</option>
         </select>
-        <select id="select-weaknesses">
+        <select id="select-weaknesses" class="btnOrder">
           <option selected="true" disabled="disabled">Seleccion por debilidad</option>
         </select>
       </nav>
@@ -111,7 +118,7 @@
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
-  <link rel="stylesheet" href="style.css" />
+  </script>
 </body>
 
 </html>
