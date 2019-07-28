@@ -33,6 +33,14 @@ p {
   font-family: 'Blinker', sans-serif;
 }
 
+.hidden {
+  display: block;
+}
+
+.pokedex {
+  display: none;
+}
+
 header.container {
   width: 100%;
   height: auto;
