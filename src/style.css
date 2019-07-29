@@ -6,18 +6,16 @@
 }
 
 .container {
-  width: 100%;
   margin: auto;
 }
 
 section {
-  width: 100%;
-  margin-bottom: 3.5rem;
+  margin-bottom: .5rem;
 }
 
 body {
+  max-width: 100%;
   background-image: url("imagenes pokemon/pokemon collage.jpg");
-  width: 100%;
 }
 
 h1,
@@ -31,6 +29,7 @@ h6 {
 
 p {
   font-family: 'Blinker', sans-serif;
+  margin: .5rem auto;
 }
 
 .hidden {
@@ -41,45 +40,41 @@ p {
   display: none;
 }
 
-header.container {
+header {
   width: 100%;
   height: auto;
-}
-
-header {
   background: rgb(3, 62, 180);
-  position: absolute;
+  position: fixed;
   /*position: fixed; /*fixed lo que hace es que en este caso el menu quede pegado hasta arriba de la pagina, junto con top, left y z index que le indican desde donde empieza*/
   top: 0;
   left: 0;
-  z-index: 100;
   padding: .5rem;
 }
 
 header img.logo {
   float: left;
-  width: 100%;
+  margin: 0 1.5rem;
+  width: 16rem;
 }
 
 .btnMenu {
-  float: right;
-  width: 4rem;
+  width: 3rem;
   position: relative;
-  right: 5rem;
+  left: 12rem;
 }
 
 .contentInfoIndex {
   background: rgb(240, 248, 255, 0.8);
   max-width: 90%;
   text-align: justify;
-  margin: 10rem auto;
+  margin: 8.5rem auto;
   margin-bottom: 1.5rem;
   border-radius: .5rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
 }
 
 section.welcome h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: rgba(214, 20, 20);
   text-align: center;
   margin: auto;
@@ -94,11 +89,10 @@ section.welcome p {
 }
 
 .content-banner img {
-  position: relative;
-  top: -1rem;
-  border-radius: 4rem;
+  position: initial;
+  border-radius: 1rem;
   width: 100%;
-  height: 30em;
+  height: 10rem;
   margin: .5rem auto;
 }
 
@@ -107,7 +101,7 @@ section.welcome p {
 }
 
 .infoBanner h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: rgb(214, 20, 20);
   text-align: center;
   margin: auto;
@@ -124,7 +118,7 @@ p.text-banner {
   height: 100%;
   text-align: center;
   margin: 1rem auto;
-  margin-top: 10rem;
+  margin-top: 8.5rem;
   border-radius: 2rem;
 }
 
@@ -137,6 +131,10 @@ nav.ordenar {
   border: .1rem solid black;
   margin-top: 1%;
   color: bisque;
+}
+
+.ordenar label {
+  display: block;
 }
 
 .btnOrder {
@@ -155,6 +153,7 @@ nav.ordenar {
 }
 
 .card {
+  text-align: center;
   font-family: 'Blinker', sans-serif;
   background: rgb(245, 237, 237);
   width: 15rem;
@@ -269,7 +268,7 @@ h2 {
   padding-top: 2.5rem;
   display: inline-block;
   position: relative;
-  top: 2.5rem;
+  top: .5rem;
   left: 10rem;
   text-decoration: none;
   transition: all .3s ease-out;
@@ -301,25 +300,22 @@ h2 {
 }
 
 #ancla {
-  color: rgb(255, 251, 251);
+  color: gold;
   padding-top: 1.8rem;
   display: inline-block;
-  /* or block */
   position: relative;
-  top: -5.5rem;
-  left: 85%;
-  border-color: rgb(253, 252, 252);
+  top: -0.5rem;
+  left: 12rem;
+  border-color: white;
   text-decoration: none;
-  /* text-align:center; */
   font-family: sans-serif;
-  /* font-size:180%; */
-  /* margin:-1em; */
+  font-size: 1.2rem;
   transition: all .3s ease-out;
 }
 
 #ancla:before {
   content: '▲';
-  font-size: .70rem;
+  font-size: 1rem;
   position: absolute;
   top: -1rem;
   left: 40%;
@@ -355,8 +351,20 @@ h2 {
 
 /* Extra small devices */
 @media screen and (max-width: 375px) and (min-width: 321px) {
+  header img.logo {
+    margin: 0 .5rem;
+    width: 14rem;
+  }
+
   .btnMenu {
-    right: 7rem;
+    float: right;
+    position: relative;
+    left: -1rem;
+    top: .3rem;
+  }
+
+  .contentInfoIndex {
+    margin: 4.7rem auto 1rem;
   }
 
   .to-top {
@@ -364,14 +372,43 @@ h2 {
   }
 
   .contentInfo {
-    margin-top: 11rem;
+    text-align: left;
+    margin-top: 4.7rem;
+  }
+
+  .card {
+    margin: .3rem 1rem;
+  }
+
+  #ancla {
+    top: -5.5rem;
+    left: 18rem;
+    width: 4rem;
+    font-size: 1rem;
+  }
+
+  #ancla:before {
+    top: -1rem;
+    left: 1rem;
+    margin-left: -.4rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 425px) and (min-width: 376px) {
+  header img.logo {
+    position: relative;
+    top: -.10rem;
+    margin: 0 1.3rem;
+  }
+
   .btnMenu {
-    right: 8.5rem;
+    left: 0rem;
+    top: .5rem;
+  }
+
+  .contentInfoIndex {
+    margin: 5.2rem auto 1rem;
   }
 
   .to-top {
@@ -379,23 +416,38 @@ h2 {
   }
 
   .contentInfo {
-    margin-top: 12rem;
+    text-align: left;
+    margin-top: 5.2rem;
+  }
+
+  .card {
+    margin: .3rem 1rem;
+  }
+
+  #ancla {
+    top: -5.5rem;
+    left: 18rem;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media screen and (max-width: 768px) and (min-width: 426px) {
   header img.logo {
-    width: 50%;
+    width: 15rem;
   }
 
   .btnMenu {
-    top: 1rem;
+    top: .50rem;
+    left: 19rem;
   }
 
   .contentInfoIndex {
-    margin: 7.1rem 1.5rem 1rem;
+    margin: 5rem 2.5rem 1rem;
     padding: 1rem;
+  }
+
+  .content-banner img {
+    height: 20rem;
   }
 
   .to-top {
@@ -403,8 +455,7 @@ h2 {
   }
 
   .contentInfo {
-    margin: 1.5rem;
-    margin-top: 7rem;
+    margin: 5rem 2.5rem 1rem;
   }
 
   .modal-content {
@@ -424,27 +475,30 @@ h2 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   header img.logo {
-    width: 50%;
+    width: 20rem;
   }
 
   .btnMenu {
+    width: 4rem;
     margin: 0 .5rem;
-    top: 2rem;
-    right: 5rem;
+    top: .50rem;
+    left: 16rem;
   }
 
   .contentInfoIndex {
-    margin: 9.5rem 2rem 1rem;
+    margin: 6.5rem auto 1rem;
+  }
+
+  .content-banner img {
+    height: 25rem;
   }
 
   .to-top {
-    left: 45rem;
+    left: 40rem;
   }
 
   .contentInfo {
-    margin: auto 2rem;
-    margin-top: 9rem;
-    border-radius: 2rem;
+    margin: 6.5rem auto 2rem;
   }
 
   .modal-content {
@@ -454,27 +508,33 @@ h2 {
   }
 
   #ancla {
-    left: 42rem;
+    left: 35rem;
+    top: -7rem;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
   header img.logo {
-    width: 50%;
+    width: 30rem;
     height: 6rem;
   }
 
   .btnMenu {
-    top: .5rem;
-    right: 9rem;
+    width: 4rem;
+    left: 35rem;
+    top: .50rem;
     margin: .5rem;
   }
 
   .contentInfoIndex {
     width: 100%;
-    margin: 6rem auto 1rem;
+    margin: 7.2rem auto 1rem;
     padding: 2rem;
+  }
+
+  .content-banner img {
+    height: 35rem;
   }
 
   .to-top {
@@ -482,7 +542,7 @@ h2 {
   }
 
   .contentInfo {
-    margin-top: 7rem;
+    margin-top: 7.2rem;
   }
 
   .modal-content {
@@ -492,8 +552,8 @@ h2 {
   }
 
   #ancla {
-    top: -9.5rem;
-    left: 70rem;
+    top: -6.5rem;
+    left: 67rem;
     font-size: 1.2rem;
   }
 }
