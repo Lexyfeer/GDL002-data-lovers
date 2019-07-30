@@ -6,11 +6,10 @@
 }
 
 .container {
-  margin: auto;
-}
-
-section {
-  margin-bottom: .5rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 body {
@@ -51,24 +50,25 @@ header {
   padding: .5rem;
 }
 
-header img.logo {
+header .logo {
+  width: 10rem;
+  height: 3rem;
   float: left;
-  margin: 0 1.5rem;
-  width: 16rem;
+  margin: 0 .5rem;
 }
 
 .btnMenu {
+  float: right;
   width: 3rem;
   position: relative;
-  left: 12rem;
+  right: 1rem;
 }
 
 .contentInfoIndex {
   background: rgb(240, 248, 255, 0.8);
   max-width: 90%;
   text-align: justify;
-  margin: 8.5rem auto;
-  margin-bottom: 1.5rem;
+  margin: 5rem auto 1.5rem;
   border-radius: .5rem;
   padding: 1rem;
 }
@@ -117,8 +117,8 @@ p.text-banner {
   width: 90%;
   height: 100%;
   text-align: center;
-  margin: 1rem auto;
-  margin-top: 8.5rem;
+  margin: auto;
+  margin-top: 5rem;
   border-radius: 2rem;
 }
 
@@ -360,12 +360,13 @@ h2 {
     float: right;
     position: relative;
     left: -1rem;
-    top: .3rem;
   }
 
-  .contentInfoIndex {
-    margin: 4.7rem auto 1rem;
+  .contentInfoIndex,
+  .contentInfo {
+    margin: 5rem auto 1rem;
   }
+
 
   .to-top {
     left: 12rem;
@@ -373,7 +374,6 @@ h2 {
 
   .contentInfo {
     text-align: left;
-    margin-top: 4.7rem;
   }
 
   .card {
@@ -404,11 +404,11 @@ h2 {
 
   .btnMenu {
     left: 0rem;
-    top: .5rem;
   }
 
-  .contentInfoIndex {
-    margin: 5.2rem auto 1rem;
+  .contentInfoIndex,
+  .contentInfo {
+    margin: 5rem auto 1rem;
   }
 
   .to-top {
@@ -417,7 +417,6 @@ h2 {
 
   .contentInfo {
     text-align: left;
-    margin-top: 5.2rem;
   }
 
   .card {
@@ -437,11 +436,12 @@ h2 {
   }
 
   .btnMenu {
-    top: .50rem;
-    left: 19rem;
+    top: 0;
+    left: -2rem;
   }
 
-  .contentInfoIndex {
+  .contentInfoIndex,
+  .contentInfo {
     margin: 5rem 2.5rem 1rem;
     padding: 1rem;
   }
@@ -452,10 +452,6 @@ h2 {
 
   .to-top {
     left: 32rem;
-  }
-
-  .contentInfo {
-    margin: 5rem 2.5rem 1rem;
   }
 
   .modal-content {
@@ -476,17 +472,19 @@ h2 {
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   header img.logo {
     width: 20rem;
+    height: 4rem;
   }
 
   .btnMenu {
     width: 4rem;
-    margin: 0 .5rem;
-    top: .50rem;
-    left: 16rem;
+    margin: auto .5rem;
+    top: 1;
+    right: 1rem;
   }
 
-  .contentInfoIndex {
-    margin: 6.5rem auto 1rem;
+  .contentInfoIndex,
+  .contentInfo {
+    margin: 6rem auto 1rem;
   }
 
   .content-banner img {
@@ -494,11 +492,7 @@ h2 {
   }
 
   .to-top {
-    left: 40rem;
-  }
-
-  .contentInfo {
-    margin: 6.5rem auto 2rem;
+    left: 48rem;
   }
 
   .modal-content {
@@ -508,7 +502,7 @@ h2 {
   }
 
   #ancla {
-    left: 35rem;
+    left: 47rem;
     top: -7rem;
   }
 }
@@ -522,15 +516,15 @@ h2 {
 
   .btnMenu {
     width: 4rem;
-    left: 35rem;
+    left: -4rem;
     top: .50rem;
     margin: .5rem;
   }
 
-  .contentInfoIndex {
-    width: 100%;
-    margin: 7.2rem auto 1rem;
-    padding: 2rem;
+  .contentInfoIndex,
+  .contentInfo {
+    margin: 9rem auto 1rem;
+    padding: .5rem;
   }
 
   .content-banner img {
@@ -541,10 +535,6 @@ h2 {
     left: 59rem;
   }
 
-  .contentInfo {
-    margin-top: 7.2rem;
-  }
-
   .modal-content {
     width: 34rem;
     top: 10rem;
@@ -552,11 +542,97 @@ h2 {
   }
 
   #ancla {
-    top: -6.5rem;
-    left: 67rem;
+    top: -7.5rem;
+    left: 68rem;
     font-size: 1.2rem;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1441px) {}
+@media only screen and (min-width: 1441px) {
+  header .logo {
+    width: 30rem;
+    height: 4.5em;
+  }
+
+  .btnMenu {
+    width: 4rem;
+    margin: 0 .5rem;
+    right: 4rem;
+    top: 0;
+  }
+
+  .contentInfoIndex,
+  .contentInfo {
+    margin: 7rem auto 1.5rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  section.welcome h1,
+  .infoBanner h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .content-banner img {
+    width: 50rem;
+    height: 30rem;
+    margin: 1rem 15rem;
+  }
+
+  .to-top {
+    font-size: 1.2rem;
+    top: -0.5rem;
+    left: 70rem;
+  }
+
+  .to-top:before {
+    font-size: 1.5rem;
+    top: -.5rem;
+    left: 2rem;
+    margin-left: -0.7rem;
+    border-radius: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 3.1rem;
+  }
+
+  .nav.ordenar {
+    font-size: 3rem;
+  }
+
+  .card {
+    width: 17rem;
+    height: 19rem;
+  }
+
+  #ancla {
+    font-size: 1.2rem;
+    top: -6rem;
+    left: 77rem;
+  }
+
+  #ancla:before {
+    font-size: 1.6rem;
+    top: -2rem;
+    left: 2rem;
+    margin-left: -0.6rem;
+    border-radius: 4rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3.3rem;
+  }
+}
